@@ -11,7 +11,7 @@ struct BIT {
     }
 
     int sum(int i) {
-        int res = 0;
+        ll res = 0;
         for (; i > 0; i -= i & -i) {
             res += tree[i];
         }      
